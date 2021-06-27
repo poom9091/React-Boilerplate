@@ -14,7 +14,7 @@ export default class Personlist extends React.Component {
 
   render() {
     return (
-      <div>
+      <div >
         {this.state.person.map((person) => (
           <li key={person.id}>{person.name}</li>
         ))}

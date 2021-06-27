@@ -2,7 +2,7 @@ import React from "react";
 import axios from "axios";
 import Input from "../../story/Input/Input";
 import Button from "../../story/Button/Button";
-import Center from "../../story/Center/Center";
+
 export default class Personinput extends React.Component {
   state = {
     name: "",
@@ -34,15 +34,32 @@ export default class Personinput extends React.Component {
 
   render() {
     return (
-      <Center>
-        <form onSubmit={this.handleSubmit}>
-          <label> Person name:</label>
-          <Input type="text" name="name" size="small" placeholder='Type something' onChange={this.handleChange} />
-          <Button type="submit" variant="primary">
-            POST API
-          </Button>
-        </form>
-      </Center>
+      <form onSubmit={this.handleSubmit} >
+        <div className="flex-inline content-center">
+        <label> Person name:</label>
+        <Input
+          type="text"
+          name="name"
+          size="small"
+          placeholder="Type something"
+          onChange={this.handleChange}
+        />
+        <Button
+          bgcolor="green"
+          boderrd="2rem"
+          color="#fff"
+          fontsize="14px"
+          height="2rem"
+          padding="0.5rem"
+          text="Post API"
+          variant=""
+          width="5.5rem"
+        >
+          Post API
+        </Button>
+        </div>
+      </form>
+
       //   <div>
       //     {this.state.person.map((person) => (
       //       <li key={person.id}>{person.name}</li>

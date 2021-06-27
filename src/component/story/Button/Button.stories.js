@@ -32,6 +32,9 @@ export const withAButtoon = () => (
     color={color("Color","#fff")}
     fontsize={text("Font-Size",'16px')}
     boderrd={text("Border-redis","0.5rem")}
+    padding={text("Padding","1.5rem")}
+    width={text("Width","8rem")}
+    height={text("Height","2rem")}
     > 
     {text("Label", "Hello Storybook")}
   </Button>
@@ -43,5 +46,12 @@ const Template = (args) => <Button {...args}></Button>;
 export const PrimaryA = Template.bind({});
 PrimaryA.args = {
   variant: "primary",
+  bgcolor: "#008CBA",
+  color: "#fff",
+  fontsize: '16px',
+  boderrd: '0.5rem',
+  padding:"1.5rem",
+  width: "8rem",
+  height: "2rem",
   // children: 'Primary Args'
 };

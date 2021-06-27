@@ -1,0 +1,11 @@
+.flex-inline{
+    flex: 1 1 auto;   
+    justify-content: center;
+}
+.content-center{
+    align-content: center;
+}
+
+.button-size{
+    padding: rem;
+}

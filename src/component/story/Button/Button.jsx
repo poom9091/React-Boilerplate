@@ -3,13 +3,15 @@ import './Button.css'
 
 
 function Button(props) {
-    const { variant = 'primary',bgcolor,color,boderrd, fontsize,children, ...rest} = props
+    const { variant = 'primary',padding,bgcolor,width,height,color,boderrd, fontsize,children, ...rest} = props
     const mystyle = {
         backgroundColor: `${bgcolor}`,
         color: `${color}`,
         fontSize: `${fontsize}`,
-        borderRadius: `${boderrd}`
-
+        borderRadius: `${boderrd}`,
+        width: `${width}` ,
+        hight: `${height}`,
+        padding: `${padding}`
     }
     return (
         <button 
