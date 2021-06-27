@@ -6,7 +6,7 @@ export default class Personlist extends React.Component {
     person: [],
   };
 
-  componentDidMount() {
+  async componentDidMount() {
     axios.get("https://jsonplaceholder.typicode.com/users").then((res) => {
       this.setState({ person: res.data });
     });

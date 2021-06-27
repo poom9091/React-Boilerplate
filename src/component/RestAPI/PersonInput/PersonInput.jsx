@@ -1,8 +1,8 @@
 import React from "react";
 import axios from "axios";
-import Input from "../Input/Input";
-import Button from "../Button/Button";
-import Center from "../Center/Center";
+import Input from "../../story/Input/Input";
+import Button from "../../story/Button/Button";
+import Center from "../../story/Center/Center";
 export default class Personinput extends React.Component {
   state = {
     name: "",
@@ -10,7 +10,6 @@ export default class Personinput extends React.Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-
     const user = {
       name: this.state.name,
     };
