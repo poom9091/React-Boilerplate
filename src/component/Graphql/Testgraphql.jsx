@@ -1,5 +1,6 @@
 import React from "react";
 import { render } from "react-dom";
+import "./Testgraphql.css";
 import {
   ApolloClient,
   InMemoryCache,
@@ -32,25 +33,26 @@ function ExchangeRates() {
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error :(</p>;
 
-  return data.episodesByIds.map(({ name, characters  }) => (
-    <div key={name}>
-          Episodes : {name}
-          { characters.map(({name,species}) => (
-            <p key={name}>
-              {name} : {species}
-            </p>
-          ))}
+  return data.episodesByIds.map(({ name, characters }) => (
+    <div key={name} >
+       <div class="center">-- Episodes : {name} --</div>
+      {characters.map(({ name, species }) => (
+        <div class="list-name" classkey={name}>
+          Name : {name} / {species}
+        </div>
+      ))}
     </div>
   ));
-
 }
 
 export default class Testgraphql extends React.Component {
   render() {
     return (
       <ApolloProvider client={client}>
-        <h2>Test GraphQl</h2>
-        <ExchangeRates />
+        <div class="border">
+          <h2 class="header">Test GraphQl</h2>
+          <ExchangeRates  />
+        </div>
       </ApolloProvider>
     );
   }

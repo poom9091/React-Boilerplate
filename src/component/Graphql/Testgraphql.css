@@ -4,21 +4,18 @@
     border: solid blue 0.2rem;
     max-width: max-content;
 }
-
 .header{
     text-align: center;
     /* padding: 0.3rem; */
     border-bottom: solid 0.1rem gray;
 }
-.input-text{
-    padding-bottom: 1rem;
-    border-bottom: solid 0.1rem gray;
-}
-
-.space-x{
-    padding-left: 1rem;
-    padding-right: 1rem;
+.center{
+    text-align: center;
 }
 .list-name{
-    padding: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }

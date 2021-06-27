@@ -1,10 +1,9 @@
 import React from 'react'
 import RestAPI from './RestAPI'
 export default {
-    title: 'RestAPI/testAPI',
+    title: 'TestAPI/RestAPI',
     component: RestAPI
 }
 
-export const Small = () => <RestAPI/>
+export const main = () => <RestAPI/>
 
-Small.storyName = 'Smaill input'

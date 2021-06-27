@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-
+import './PersonList.css'
 export default class Personlist extends React.Component {
   state = {
     person: [],
@@ -14,7 +14,7 @@ export default class Personlist extends React.Component {
 
   render() {
     return (
-      <div >
+      <div class="list-name">
         {this.state.person.map((person) => (
           <li key={person.id}>{person.name}</li>
         ))}

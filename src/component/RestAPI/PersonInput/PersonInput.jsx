@@ -2,7 +2,7 @@ import React from "react";
 import axios from "axios";
 import Input from "../../story/Input/Input";
 import Button from "../../story/Button/Button";
-
+import './PersonInput.css'
 export default class Personinput extends React.Component {
   state = {
     name: "",
@@ -34,10 +34,10 @@ export default class Personinput extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit} >
-        <div className="flex-inline content-center">
-        <label> Person name:</label>
+      <form onSubmit={this.handleSubmit} class='flex-inline' >
+        <label class='space-x content-center'> Person name:</label>
         <Input
+          className={`space-x`}
           type="text"
           name="name"
           size="small"
@@ -45,6 +45,7 @@ export default class Personinput extends React.Component {
           onChange={this.handleChange}
         />
         <Button
+          className={`space-x`}
           bgcolor="green"
           boderrd="2rem"
           color="#fff"
@@ -57,7 +58,6 @@ export default class Personinput extends React.Component {
         >
           Post API
         </Button>
-        </div>
       </form>
 
       //   <div>

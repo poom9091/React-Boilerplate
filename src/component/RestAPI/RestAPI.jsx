@@ -4,10 +4,14 @@ import Personlist from './PersonList/PersonList'
 import './RestAPI.css'
 function RestAPI() {
     return (
-        <div className="">
-            <h1 className=" ">Test RestAPI</h1>
-            <Personinput  />
-            <Personlist/>
+        <div class="border">
+            <h1 class="header">Test RestAPI</h1>
+            <div class="space-x input-text">
+                <Personinput />
+            </div>
+            <div class="space-x list-name">
+                <Personlist />
+            </div>
         </div>
     )
 }
