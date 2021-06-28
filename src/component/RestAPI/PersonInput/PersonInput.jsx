@@ -12,7 +12,7 @@ export default class Personinput extends React.Component {
     event.preventDefault();
     const user = {
       name: this.state.name,
-    };
+  };
 
     axios
       .post("https://jsonplaceholder.typicode.com/users", { user })
@@ -38,6 +38,8 @@ export default class Personinput extends React.Component {
         <label class='space-x content-center'> Person name:</label>
         <Input
           className={`space-x`}
+          
+          variant="p"
           type="text"
           name="name"
           size="small"
@@ -45,7 +47,7 @@ export default class Personinput extends React.Component {
           onChange={this.handleChange}
         />
         <Button
-          className={`space-x`}
+          variant="primary"
           bgcolor="green"
           boderrd="2rem"
           color="#fff"
@@ -53,7 +55,6 @@ export default class Personinput extends React.Component {
           height="2rem"
           padding="0.5rem"
           text="Post API"
-          variant=""
           width="5.5rem"
         >
           Post API

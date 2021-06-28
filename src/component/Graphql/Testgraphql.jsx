@@ -1,5 +1,4 @@
 import React from "react";
-import { render } from "react-dom";
 import "./Testgraphql.css";
 import {
   ApolloClient,
@@ -35,6 +34,7 @@ function ExchangeRates() {
 
   return data.episodesByIds.map(({ name, characters }) => (
     <div key={name} >
+        <div class="center"> Rick and Morty </div>
        <div class="center">-- Episodes : {name} --</div>
       {characters.map(({ name, species }) => (
         <div class="list-name" classkey={name}>

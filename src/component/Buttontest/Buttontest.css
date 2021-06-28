@@ -1,4 +1,8 @@
 .button-style{
     border: 0.2rem solid black;
-    padding: 0.5rem;
+    border-radius: 1rem;
+    height: max-content;
+    margin: auto;
+    padding: 0.8rem;
+    cursor: pointer;
 }
