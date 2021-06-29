@@ -10,7 +10,7 @@ function Boilerplate() {
             <div class="centent-plate">
                 <div class='flex-inline text-jest'>
                     <h1>Test Jest</h1>
-                    <Buttontest class="size-button" label="click me plase"></Buttontest>
+                    <Buttontest class="size-button" label="Click Me"></Buttontest>
                 </div>
                 <div class='flex-inline'>
                     <RestAPI />

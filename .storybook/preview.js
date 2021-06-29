@@ -1,4 +1,4 @@
-import React from 'react'
+
 import "@storybook/addon-console"
 
 export const parameters = {
