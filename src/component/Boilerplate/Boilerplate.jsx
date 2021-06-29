@@ -6,7 +6,7 @@ import './Boilerplate.css'
 function Boilerplate() {
     return (
         <div class="example">
-            <h1 class="header-1">Boilderplate React</h1>
+            <h1 class="header-1">Hi this is Boilderplate React</h1>
             <div class="centent-plate">
                 <div class='flex-inline text-jest'>
                     <h1>Test Jest</h1>
