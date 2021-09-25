@@ -19,5 +19,5 @@ phases:
   
   post_build:
     commands:
-      - aws s3 sync ./build s3://$AWS_S3_BUCKET
+      - aws s3 sync ./build s3://$BUCKET_S3_HOST_NAME
       - aws cloudfront create-invalidation --distribution-id $AWS_CF_DISTRIBUTION_ID --paths "/*"
