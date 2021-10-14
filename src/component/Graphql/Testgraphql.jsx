@@ -1,5 +1,5 @@
 import React from "react";
-import "./Testgraphql.css";
+import Carduser from '../Carduser2/Carduser2';
 import {
   ApolloClient,
   InMemoryCache,
@@ -13,6 +13,7 @@ var client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
+
 const EXCHANGE_RATES = gql`
   query {
     episodesByIds(ids: [1]) {
@@ -21,26 +22,34 @@ const EXCHANGE_RATES = gql`
         id
         name
         species
+        image
       }
     }
   }
 `;
 
-function ExchangeRates() {
+function GetCharater() {
   const { loading, error, data } = useQuery(EXCHANGE_RATES);
   console.log(data);
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error :(</p>;
 
-  return data.episodesByIds.map(({ name, characters }) => (
-    <div key={name} >
-        <div class="center"> Rick and Morty </div>
-       <div class="center">-- Episodes : {name} --</div>
-      {characters.map(({ id,name, species }) => (
-        <div class="list-name" classkey={name} key={id}>
-          Name : {name} / {species}
-        </div>
-      ))}
+  return data.episodesByIds.map(({ name, characters}) => (
+    <div key={name}>
+      <div className="flex flex-wrap space-x-3 justify-center py-5"> 
+        {characters.map(({ name, species ,image }) => (
+          <div className="" classkey={name}>
+            <Carduser 
+              name={name} 
+              species={species} 
+              image={image} 
+              imageWidht="w-36" 
+              imageHight="h-36" 
+              colortheme="blue-400"
+            />
+          </div>
+        ))}
+      </div>
     </div>
   ));
 }
@@ -49,10 +58,7 @@ export default class Testgraphql extends React.Component {
   render() {
     return (
       <ApolloProvider client={client}>
-        <div class="border">
-          <h2 class="header">Test GraphQl</h2>
-          <ExchangeRates  />
-        </div>
+          <GetCharater />
       </ApolloProvider>
     );
   }

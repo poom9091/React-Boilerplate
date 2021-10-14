@@ -5,17 +5,19 @@
     max-width: max-content;
 }
 .header{
-    text-align: center;
-    /* padding: 0.3rem; */
+    padding: 0.3rem; 
     border-bottom: solid 0.1rem gray;
+    text-align: center;
 }
 .center{
     text-align: center;
 }
-.list-name{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
+.list{
     padding-left: 2rem;
     padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.list_name{
+    padding: 0.2rem;
 }

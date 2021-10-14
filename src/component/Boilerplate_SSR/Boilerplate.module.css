@@ -1,21 +1,20 @@
-.flex-inline{
+.flex_inline{
     display: flex;
     float: auto;
     gap: 1.5rem;
    
 }
-.header-1{
+.header{
     text-align: center;
-    /* color: deepskyblue; */
 }
-.centent-plate{
+.centent_plate{
     width: max-content;
     align-content: center;
     margin: auto;
     padding-left: 2rem;
     padding-right: 2rem;
 }
-.text-jest{
+.text_jest{
     margin: auto;
     border-radius: 1rem;
     border: solid blue 0.2rem;
@@ -24,4 +23,7 @@
     padding-right: 17rem;
     padding-left: 17rem;
     margin-bottom: 1rem;
+}
+.example{
+    padding: 1.5rem;
 }

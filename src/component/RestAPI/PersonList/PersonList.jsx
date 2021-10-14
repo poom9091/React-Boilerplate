@@ -1,26 +1,45 @@
 import React from "react";
 import axios from "axios";
-import './PersonList.css'
-export default class Personlist extends React.Component {
-  state = {
-    person: [],
-  };
+import styles from './PersonList.module.css';
+import Carduser from "../../Carduser/Carduser";
+import faker from 'faker';
+
+export default class Personlist extends React.Component{
+  constructor(props){
+    super(props)
+    this.state = {
+      person: [],
+    };
+    console.log(this.state);
+    console.log(props.restAPI);
+  }
 
   async componentDidMount() {
     axios.get("https://jsonplaceholder.typicode.com/users").then((res) => {
       this.setState({ person: res.data });
-      console.log(res.data);
+      console.log(this.state);
     });
+    // await this.setState({person: this.props.restAPI});
+    // console.log(this.state);
   }
 
-  render() {
+
+  render(){  
     return (
-      <div class="list-name">
+      <div className={styles.list_name}>
         {this.state.person.map((person) => (
-          <li key={person.id}>{person.name}</li>
+          <div key={person.id}>
+            <Carduser 
+              colortheme="blue-500"
+              name={person.name} 
+              username={person.username} 
+              phone={person.phone} 
+              email={person.email} 
+              avatar={faker.image.avatar()}
+            /> 
+          </div>
         ))}
       </div>
     );
   }
 }
-

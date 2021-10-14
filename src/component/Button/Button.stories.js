@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "./Button";
 import Center from "../Center/Center";
-import { withKnobs, text, boolean, color } from "@storybook/addon-knobs";
+import { withKnobs, text, boolean, number, color } from "@storybook/addon-knobs";
 // import { withKnobs, text ,boolean, number} from '@storybook/addon-knobs'
 
 export default {
@@ -25,7 +25,7 @@ export const log = () => (
   </Button>
 );
 
-export const Knobs = () => (
+export const withAButtoon = () => (
   <Button 
     disabled={boolean("Disabled", false)} 
     bgcolor={color("Background-Color","#008CBA")}
@@ -46,8 +46,8 @@ const Template = (args) => <Button {...args}></Button>;
 export const PrimaryA = Template.bind({});
 PrimaryA.args = {
   variant: "primary",
-  // bgcolor: "#008CBA",
-  // color: "#fff",
+  bgcolor: "#008CBA",
+  color: "#fff",
   fontsize: '16px',
   boderrd: '0.5rem',
   padding:"1.5rem",

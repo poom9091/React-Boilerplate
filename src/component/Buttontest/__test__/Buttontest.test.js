@@ -12,7 +12,6 @@ afterEach(cleanup);
 it("render without crashing",()=>{
     const div = document.createElement("div")
     ReactDOM.render(<Buttontest/>, div)
-    // ReactDOM.render
 })
 
 it("render button correctly",() => {

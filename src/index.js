@@ -3,10 +3,19 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import NavBar from './component/NavigationBar/NavigationBar';
+import Menu from './component/NavigationBar/Manu';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <div className=" bg-blue-500">
+      <NavBar
+        NavbarName="Boilerplate React"
+        NavbarColor="text-white"
+      >
+      </NavBar>
+      <App />
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );
