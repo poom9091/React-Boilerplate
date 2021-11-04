@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
-import Input from "../../Input/Input"
-import Button from "../../Button/Button";
+import Input from "../Input/Input"
+import Button from "../Button/Button";
 export default class Personinput extends React.Component {
   state = {
     name: "",

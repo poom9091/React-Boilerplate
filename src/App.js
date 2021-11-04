@@ -2,11 +2,11 @@ import "./App.css";
 import 'tailwindcss/tailwind.css'
 import Boilerplate from "./component/Boilerplate_SSR/Boilerplate";
 import Testgraphql from './component/Graphql/Testgraphql' ;
-import Personinput from './component/RestAPI_SSR/PersonInput/PersonInput';
+import Personinput from './component/PersonInput/PersonInput';
 import Personlist  from './component/RestAPI/PersonList/PersonList';
 import Title from './component/Title/title';
 import ListLayout from './component/ListLayout/LiatLayout';
-import Buttontest from '../tests/Buttontest/Buttontest';
+import Buttontest from './component/Buttontest/Buttontest';
 import React from "react";
 
 var ep = Math.floor(Math.random() * 5)+1;
