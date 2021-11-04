@@ -6,7 +6,7 @@ import Personinput from './component/RestAPI_SSR/PersonInput/PersonInput';
 import Personlist  from './component/RestAPI/PersonList/PersonList';
 import Title from './component/Title/title';
 import ListLayout from './component/ListLayout/LiatLayout';
-import Buttontest from './component/Buttontest/Buttontest';
+import Buttontest from '../tests/Buttontest/Buttontest';
 import React from "react";
 
 var ep = Math.floor(Math.random() * 5)+1;

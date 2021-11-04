@@ -1,5 +1,5 @@
 import React from 'react'
-import Menu from './Manu'
+
 
 export default class NavBar extends React.Component{
     constructor(props){

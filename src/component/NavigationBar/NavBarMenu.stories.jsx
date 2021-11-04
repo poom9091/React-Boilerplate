@@ -1,8 +1,5 @@
 import React from 'react'
 import Menu from './Manu'
-import NavBar from './NavigationBar'
-import { action } from '@storybook/addon-actions'
-import { withInfo } from '@storybook/addon-knobs'
 
 export default {
     title: 'NavigationBar/NavBar_Menu',

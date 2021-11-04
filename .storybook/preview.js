@@ -1,5 +1,8 @@
 
-import "@storybook/addon-console"
+import "@storybook/addon-console";
+import 'tailwindcss/tailwind.css';
+import '../src/App.css'
+import '../src/index.css';
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -8,6 +11,19 @@ export const parameters = {
       color: /(background|color)$/i,
       date: /Date$/,
     },
+  },
+  backgrounds: {
+    default: 'bluetheam',
+    values: [
+      {
+        name: 'write',
+        value: '#fff',
+      },
+      {
+        name: 'bluetheam',
+        value: '#3482F6',
+      },
+    ],
   },
   options: {
     storySort: (a, b) =>

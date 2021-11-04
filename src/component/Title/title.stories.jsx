@@ -1,6 +1,5 @@
 import React from 'react'
 import Title from './title'
-import { withKnobs, text, boolean, number, color } from "@storybook/addon-knobs";
 
 export default {
     title: 'Title/Title',

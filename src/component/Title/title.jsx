@@ -4,6 +4,7 @@ export default class Title extends React.Component{
     constructor(props){
         super(props)
     }
+    
     render(){
         return(
             <div className=" max-w-max rounded-lg p-4 space-y-3">

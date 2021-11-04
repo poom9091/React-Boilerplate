@@ -1,5 +1,4 @@
 import React from 'react'
-import faker from 'faker'
 
 export default class Carduser extends React.Component{
     constructor(props){

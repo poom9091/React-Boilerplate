@@ -1,6 +1,5 @@
 import React from "react";
 import Button from "./Button";
-import Center from "../Center/Center";
 import { withKnobs, text, boolean, number, color } from "@storybook/addon-knobs";
 // import { withKnobs, text ,boolean, number} from '@storybook/addon-knobs'
 
@@ -8,7 +7,6 @@ export default {
   title: "Form/Button",
   component: Button,
 
-  decorators: [(story) => <Center> {story()}</Center>, withKnobs],
   args: {
     children: "Button",
     onClick: { action: "clicked" },
