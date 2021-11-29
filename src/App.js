@@ -15,7 +15,7 @@ function App() {
   return (
      <Boilerplate>
         <Title 
-          title='React-CO' 
+          title='React' 
           TitleColor='text-white' 
           TitleSize='text-9xl' 
         />
